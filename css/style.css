@@ -63,18 +63,20 @@ main {
 /* footer */
 footer{
     width: 100%;
-    height: 100px;
+    height: 130px;
     background-color: black;
     color: white;
-
 }
-footer>h3{
-    align-self: ;
+
+.legal-info>ul li{
+    padding-right: 0.5rem;
+    padding-top:10px;
 }
 
 footer nav ul.social-contact{
     align-self: flex-end;
 }
+
 footer ul li {
     display: inline-block;
 }
