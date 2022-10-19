@@ -33,16 +33,36 @@ a{
 header{
     height: 70px;
     background-color: #FF6901;
-    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:4;
+}
+
+.main-nav {
+    width: 25%;
+}
+
+.tools {
+    width: 25%;
+    justify-content: flex-end;
+}
+
+header .logo{
+    width: 50%;
 }
 
 header .logo>img{
     height: 30px;
 }
 
+.logo{
+    justify-content: center;
+}
+
 /* main */
 .main{
-    margin-top: 40px;
+    margin-top: 110px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
