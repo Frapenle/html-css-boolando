@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* base components */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+header{
+    height: 70px;
+    background-color: #FF6901;
+    justify-content: center;
+}
+
+header .logo>img{
+    height: 30px;
+}
