@@ -57,6 +57,18 @@ header .logo>img{
     width: 100%;
 }
 
+.img-model-hover {
+    display: none;
+}
+
+.item:hover .img-model-hover {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .discount {
     color: white;
     background-color: red;
@@ -64,6 +76,7 @@ header .logo>img{
     bottom: 80px;
     left: 0;
     padding: 4px 6px;
+    z-index: 2;
 }
 
 .disc-sos{
@@ -73,6 +86,8 @@ header .logo>img{
     bottom: 80px;
     left: 50px;
     padding: 4px 6px;
+    z-index: 2;
+    display: block;
 }
 
 .pos-lf{
