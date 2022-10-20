@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* base components */
-ul{
+ul {
     list-style: none;
 }
 
-a{
+ul li {
+    padding-right: 12px;
+}
+
+a {
     text-decoration: none;
     color: inherit;
 }
 
-.flex{
+.hover:hover {
+    opacity: 0.8;
+}
+
+.flex {
     display: flex;
 }
 
@@ -23,20 +35,23 @@ a{
     justify-content: space-between;
 }
 
-.container{
+.container {
     width: 70%;
     align-items: center;
     margin: 0 auto;
 }
 
 /* header */
-header{
+header {
+    color: white;
     height: 70px;
     background-color: #FF6901;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index:4;
+    z-index: 4;
+    font-weight: 500;
+    font-size: 1.1rem;
 }
 
 .main-nav {
@@ -48,33 +63,54 @@ header{
     justify-content: flex-end;
 }
 
-header .logo{
+header .logo {
     width: 50%;
 }
 
-header .logo>img{
+header .logo>img {
     height: 30px;
 }
 
-.logo{
+.logo {
     justify-content: center;
 }
 
+.tools img {
+    width: 25px;
+    filter: invert(1);
+}
+
 /* main */
-.main{
-    margin-top: 110px;
+.main {
+    margin-top: 120px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.item{
+.item {
     width: calc(90% / 3);
     margin-bottom: 30px;
     position: relative;
 }
 
-.item>img{
+.item>img {
     width: 100%;
+}
+
+.item::before {
+    content: "\2665";
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 2;
+}
+
+.item:hover::before {
+    color: red;
 }
 
 .img-model-hover {
@@ -99,7 +135,7 @@ header .logo>img{
     z-index: 2;
 }
 
-.disc-sos{
+.disc-sos {
     color: white;
     background-color: green;
     position: absolute;
@@ -110,27 +146,62 @@ header .logo>img{
     display: block;
 }
 
-.pos-lf{
+.pos-lf {
     left: 0;
 }
 
+/* description card */
+.brand {
+    color: #7c8083;
+    font-weight: 300;
+}
+
+.dress-name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.price {
+    color: red;
+    font-weight: 500;
+}
+
+.price>span {
+    text-decoration: line-through;
+    color: #7c8083;
+    font-weight: 300;
+}
+
 /* footer */
-footer{
+footer {
     width: 100%;
     height: 130px;
     background-color: black;
     color: white;
 }
 
-.legal-info>ul li{
+.legal-info>ul li {
     padding-right: 0.5rem;
-    padding-top:10px;
+    padding-top: 10px;
+    font-weight: 300;
+    font-size: 14px;
 }
 
-footer nav ul.social-contact{
+.social-contact {
+    padding-right: 0.5rem;
+    padding-top: 10px;
+}
+
+footer nav ul.social-contact {
     align-self: flex-end;
 }
 
 footer ul li {
     display: inline-block;
+}
+
+footer .social-contact img {
+    width: 20px;
+    background-color: white;
+    border-radius: 2px;
 }

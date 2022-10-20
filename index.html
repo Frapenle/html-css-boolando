@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolando</title>
-    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 <body>
     <!-- header -->
     <header class="flex">
         <!-- main nav -->
-        <div class="container flex-sb">
+        <div class="container flex">
             <nav class="main-nav">
                 <ul class="flex">
-                    <li><a href="">Donna</a></li>
-                    <li><a href="">Uomo</a></li>
-                    <li><a href="">Bambini</a></li>
+                    <li><a class="hover" href="#">Donna</a></li>
+                    <li><a class="hover" href="#">Uomo</a></li>
+                    <li><a class="hover" href="#">Bambini</a></li>
                 </ul>
             </nav>
-            
+
             <!-- logo -->
             <div class="logo flex">
                 <img src="./img/boolean-logo.png" alt="logo booleando">
             </div>
-            
+
             <!-- social icons -->
             <nav class="tools flex">
                 <ul class="flex">
-                    <li><a href=""></a>utente</li>
-                    <li><a href=""></a>preferiti</li>
-                    <li><a href=""></a>carrello</li>
+                    <li><a href=""><img class="hover" src="../html-css-boolando/img/person.svg" alt="person icon"></a>
+                    </li>
+                    <li><a href=""><img class="hover" src="../html-css-boolando/img/favourite.svg"
+                                alt="favourite icon"></a></li>
+                    <li><a href=""><img class="hover" src="../html-css-boolando/img/sh-bag.svg" alt="carr"></a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +57,7 @@
                 <div class="descripion-card">
                     <div class="brand">Levi's</div>
                     <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="price">14,99 € <span>&nbsp; 29,99 €</span></div>
                 </div>
             </div>
             <!-- /item -->
@@ -60,9 +67,9 @@
                 <img class="img-model-hover" src="./img/2b.webp" alt="levi's model">
                 <div class="discount">-30%</div>
                 <div class="descripion-card">
-                    <div class="brand">Levi's</div>
+                    <div class="brand">Guess</div>
                     <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="price">20,99 € <span>&nbsp; 29,99 €</span></div>
                 </div>
             </div>
 
@@ -71,9 +78,9 @@
                 <img class="img-model-hover" src="./img/3b.webp" alt="levi's model">
                 <div class="discount">-30%</div>
                 <div class="descripion-card">
-                    <div class="brand">Levi's</div>
+                    <div class="brand">Come >ucchero Filato</div>
                     <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="price">129,99 € <span>&nbsp; 184,99 €</span></div>
                 </div>
             </div>
 
@@ -84,8 +91,8 @@
                 <div class="disc-sos">Sostenibilità</div>
                 <div class="descripion-card">
                     <div class="brand">Levi's</div>
-                    <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="dress-name">Tee unisex</div>
+                    <div class="price">14,99 € <span>&nbsp; 29,99 €</span></div>
                 </div>
             </div>
 
@@ -93,9 +100,9 @@
                 <img class="img-model" src="./img/5.webp" alt="levi's model">
                 <img class="img-model-hover" src="./img/5b.webp" alt="levi's model">
                 <div class="descripion-card">
-                    <div class="brand">Levi's</div>
-                    <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="brand">Maia Deluxe</div>
+                    <div class="dress-name">stripe bodice</div>
+                    <div class="price">99,99 €</div>
                 </div>
             </div>
 
@@ -104,9 +111,9 @@
                 <img class="img-model-hover" src="./img/6b.webp" alt="levi's model">
                 <div class="disc-sos pos-lf">Sostenibilità</div>
                 <div class="descripion-card">
-                    <div class="brand">Levi's</div>
-                    <div class="dress-name">Relaxed tee unisex</div>
-                    <div class="price">14.99 <span>29.99</span></div>
+                    <div class="brand">Esprit</div>
+                    <div class="dress-name">maglione - blaack</div>
+                    <div class="price">29,99 €</div>
                 </div>
             </div>
 
@@ -115,6 +122,8 @@
 
     <!-- footer -->
     <footer class="flex">
+
+        <!-- footer company infos -->
         <div class="container flex-sb">
             <div class="info">
                 <h3 class="company-name">Boolando s.r.l.</h3>
@@ -125,19 +134,22 @@
                         <li><a href="">Diritto di recesso</a></li>
                     </ul>
                 </div>
+
+                <!-- footer social info -->
             </div>
-                <nav>
+            <nav>
                 <h4>Trovaci anche su</h4>
                 <ul class=" social-contact flex">
-                    <li><a href="">a</a></li>
-                    <li><a href="">b</a></li>
-                    <li><a href="">c</a></li>
-                    <li><a href="">d</a></li>
-                    <li><a href="">e</a></li>
+                    <li><a href="#"><img src="../html-css-boolando/img/icons/twitter.svg" alt="twitter icon"></a></li>
+                    <li><a href="#"><img src="../html-css-boolando/img/icons/facebook.svg" alt="facebook icon"></a></li>
+                    <li><a href="#"><img src="../html-css-boolando/img/icons/instagram.svg" alt="instagram icon"></a>
+                    </li>
+                    <li><a href="#"><img src="../html-css-boolando/img/icons/pinterest.svg" alt="pinterest icon"></a>
+                    </li>
+                    <li><a href="#"><img src="../html-css-boolando/img/icons/yt.svg" alt="youtube icon"></a></li>
                 </ul>
             </nav>
         </div>
     </footer>
-    
 </body>
 </html>
