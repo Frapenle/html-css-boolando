@@ -97,8 +97,7 @@ header .logo>img {
     width: 100%;
 }
 
-.item::before {
-    content: "\2665";
+.wish-list {
     font-size: 30px;
     padding: 10px;
     color: black;
@@ -109,7 +108,7 @@ header .logo>img {
     z-index: 2;
 }
 
-.item:hover::before {
+.wish-list:hover {
     color: red;
 }
 
